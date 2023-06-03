@@ -5,10 +5,10 @@ Should be able to get an idea of C# features too, it's pretty readable and self 
 
 There are 4 scripts:
  - Wave
-  - This is a component that creates an audio clip
+     - This is a component that creates an audio clip
  - DataSeedRandomFilter
-  - example of an audio filter    
+     - example of an audio filter    
  - WaveMath
-  - some simple math functions for generating audio
+     - some simple math functions for generating audio
  - RRandom
-  - my own simple pseudo random generating code (and some useful helpers)
+     - my own simple pseudo random generating code (and some useful helpers)
