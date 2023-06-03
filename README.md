@@ -23,7 +23,9 @@ The blue cube is like the "head" with ears, it contains the AudioListener compon
 The red and green spheres both have AudioSources which play audio. I set the spacial blend on them to max so they play relative to where they are to the AudioListener (blue cube). 
 NOTE: You can adjust all these settings in script or in the editor (inspector) of the AudioSource.
 
-I added the Wave script (component) to them which generates a sound based on the type you select.
+I added the Wave script (component) to them which generates a sound based on the type you select. In the left speaker (red) you should hear a sin wave, and in the right speaker (green) you should hear some noise.
+
+WARNING: you might want to turn your speakers down cuz idk how loud it'll be......
 
 # Filters
 You can add filters to AudioListener or AudioSource objects. The DataSeedRandomFilter just makes ugly noise, but there are some built in unity filters too.
