@@ -18,4 +18,13 @@ public class DataSeedRandomFilter : MonoBehaviour {
         }
     }
 
+    private void Update() {
+        // this is run every frame, so maybe you can use it for filter calculations, idk... 
+    }
+
+    // Run after all updates are called
+    // private void LateUpdate() {}
+    
+    // Run at a fixed interval
+    // private void FixedUpdate() {}
 }

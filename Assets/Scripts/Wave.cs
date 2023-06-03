@@ -38,7 +38,6 @@ public class Wave : MonoBehaviour {
         }
     }
 
-    // https://docs.unity3d.com/ScriptReference/AudioClip.Create.html
 
     private void CreateClip() {
         AudioSource audioSrc = GetComponent<AudioSource>();
@@ -50,31 +49,23 @@ public class Wave : MonoBehaviour {
         if(GetComponent<AudioSource>() is AudioSource audioSource) {}
     }
 
-    // When the game object is done being create and started running
-    // private void Start() {}
-    
-    // Run every frame
-    // private void Update() {}
-
-    // Run after all updates are called
-    // private void LateUpdate() {}
-    
-    // Run at a fixed interval
-    // private void FixedUpdate() {}
-
     // When this component is first created 
     void Awake() {
         CreateClip();
     }
 
-    // Called in editor only, any time some data changes or when run is pressed and stuff
+    // When the game object is done being created and starts running
+    // private void Start() {}
+
+    // Called in editor only, any time some data changes in the inspector or when run is pressed and stuff
     private void OnValidate() {            
         // Reset the audio clip if we play with the values in the editor (only while the game is running)
         if(Application.isPlaying) CreateClip();
     }
 
     // Read the audio clip into data (set during clip creation).
-    // You can also omit this function and use clip.SetData(dataArray), or you can load actual audio files as clips, but this is a procedural example
+    // You can also omit this function and use clip.SetData(dataArray), or you can load actual audio files as clips, but this is a procedural example.
+    // See https://docs.unity3d.com/ScriptReference/AudioClip.Create.html
     void OnAudioRead(float[] data) {
         int count = 0;
         while (count < data.Length) {
