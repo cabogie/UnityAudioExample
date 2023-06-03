@@ -35,8 +35,6 @@ You can try moving around the objects to see the spacial blending at play.
 
 ![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/b63403a6-8cd2-47da-a0eb-9d12bcfa6157)
 
-![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/3456b170-1672-4948-a1d9-f91418abf8bd)
-
 
 # Filters
 You can add filters to AudioListener or AudioSource objects. The DataSeedRandomFilter just makes ugly noise, but there are some built in unity filters too.
@@ -61,7 +59,14 @@ GameObjects are your basic nested structure (like siblings, children).
 
 ![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/283798c6-8ff3-4ebf-a30d-a70c976d685e)
 
+In my example scene, I added the AudioSources separately as children of the spheres. Mostly to separate the 3d object components and the audio components.
+
+---
+
 At their most basic, GameObjects have a Transform which is their position, rotation, and scale.
+
+![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/3456b170-1672-4948-a1d9-f91418abf8bd)
+
 
 To create a component, create a c sharp script and extend MonoBehaviour. MonoBehaviours can access anything on the game object, and can also implement built in methods like update, awake, etc which are called at different times in the loop. OnAudioFilterRead is part of MonoBehaviour too I think.
 
