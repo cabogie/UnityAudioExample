@@ -1,5 +1,5 @@
 # Unity Audio Example
-I added comments to the scripts to explain some Unity stuff.
+I added lots of comments to the scripts to explain stuff.
 
 Should be able to get an idea of C# features too, it's pretty readable and self explanatory.
 
@@ -38,4 +38,13 @@ using the method I did in the Wave script by creating an AudioClip using the rea
 I know almost nothing about audio stuff so I'm sure you'll be more at home with all the frequencies, rates, positions, etc.  
 
 You can also just add a file for the audio clip to play .wav file or something.
+
+# Unity Basics
+Create GameObjects in the scene and attach components (scripts) to them.
+
+# Rendering
+Unity has multiple render pipelines, and I setup the project using URP (Universal Render Pipeline). 
+
+In project settings you tell Unity what pipeline you're using with a pipeline asset. This asset is a bunch of settings for rendering, along with linking the renderers themselves.
+So unity reads pipeline asset which tells it things about how lighting should work and which renderers to use. This is all very customizable and a little complicated, but you don't need to worry about it here.
 
