@@ -34,7 +34,9 @@ You can add filters to AudioListener or AudioSource objects. The DataSeedRandomF
 
 # Audio Clips
 You can procedurally generate audio either with a filter script (implement the built in function OnAudioFilterRead - "If OnAudioFilterRead is implemented, Unity will insert a custom filter into the audio DSP chain") 
+
 or 
+
 using the method I did in the Wave script by creating an AudioClip using the reader and position callbacks.
 
 I know almost nothing about audio stuff so I'm sure you'll be more at home with all the frequencies, rates, positions, etc.  
