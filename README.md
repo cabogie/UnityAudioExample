@@ -16,16 +16,27 @@ There are 4 scripts:
 # AudioListeners and AudioSources
 I have the scene setup with the camera behind the objects. 
 
-![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/3c81d60c-51ca-489a-a009-5d54483bd452)
-
 The blue cube is like the "head" with ears, it contains the AudioListener component. This listens to AudioSources.
 
 The red and green spheres both have AudioSources which play audio. I set the spacial blend on them to max so they play relative to where they are to the AudioListener (blue cube). 
+
+![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/3c81d60c-51ca-489a-a009-5d54483bd452)
+
 NOTE: You can adjust all these settings in script or in the editor (inspector) of the AudioSource.
 
-I added the Wave script (component) to them which generates a sound based on the type you select. In the left speaker (red) you should hear a sin wave, and in the right speaker (green) you should hear some noise.
+I added the Wave script (component) to them which generates a sound based on the type you select. 
+In the left speaker (red) you should hear a sin wave, and in the right speaker (green) you should hear some noise.
 
 WARNING: you might want to turn your speakers down cuz idk how loud it'll be......
+
+---
+
+You can try moving around the objects to see the spacial blending at play.
+
+![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/b63403a6-8cd2-47da-a0eb-9d12bcfa6157)
+
+![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/3456b170-1672-4948-a1d9-f91418abf8bd)
+
 
 # Filters
 You can add filters to AudioListener or AudioSource objects. The DataSeedRandomFilter just makes ugly noise, but there are some built in unity filters too.
@@ -45,6 +56,10 @@ You can also just add a file for the audio clip to play .wav file or something.
 
 # Unity Basics
 Create GameObjects in the scene and attach components (scripts) to them.
+
+GameObjects are your basic nested structure (like siblings, children).
+
+![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/283798c6-8ff3-4ebf-a30d-a70c976d685e)
 
 At their most basic, GameObjects have a Transform which is their position, rotation, and scale.
 
