@@ -48,6 +48,12 @@ Create GameObjects in the scene and attach components (scripts) to them.
 
 At their most basic, GameObjects have a Transform which is their position, rotation, and scale.
 
+To create a component, create a c sharp script and extend MonoBehaviour. MonoBehaviours can access anything on the game object, and can also implement built in methods like update, awake, etc which are called at different times in the loop. OnAudioFilterRead is part of MonoBehaviour too I think.
+
+NOTE: unity is a little peculiar about file and class naming for components. So usually try to keep the file name and class name the same for components that you want to use in the editor. If you want to rename a script, try to do it in the Unity editor cuz it's easy to break the component links (like it'll say missing component or something if you rename a file in vscode or whatever).
+
+I think it might be less weird if it's a component you'll only add via script, so like if you have a hidden helper component you add to a gameobject at runtime or something. I haven't built / exported a project yet tho so idk what implications there are in that. 
+
 # Rendering
 Unity has multiple render pipelines, and I setup the project using URP (Universal Render Pipeline). 
 
