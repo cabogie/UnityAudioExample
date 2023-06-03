@@ -8,7 +8,7 @@ public class Wave : MonoBehaviour {
         Sin, Cos, Tan, Saw, Triangle, Noise
     }
 
-    public int position = 0;
+    private int position = 0;
 
     // SerializeField serializes and shows properties in the inspector. Public fields also show up in the inspector (unity editor)
     [SerializeField]
