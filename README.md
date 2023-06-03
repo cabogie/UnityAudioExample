@@ -67,6 +67,11 @@ At their most basic, GameObjects have a Transform which is their position, rotat
 
 ![image](https://github.com/cabogie/UnityAudioExample/assets/8726619/3456b170-1672-4948-a1d9-f91418abf8bd)
 
+---
+
+GameObjects can be enabled and disabled. So can components (for components this just disables them from calling update functions I think).
+
+# Components (MonoBehaviour)
 
 To create a component, create a c sharp script and extend MonoBehaviour. MonoBehaviours can access anything on the game object, and can also implement built in methods like update, awake, etc which are called at different times in the loop. OnAudioFilterRead is part of MonoBehaviour too I think.
 
