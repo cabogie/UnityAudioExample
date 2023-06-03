@@ -46,6 +46,8 @@ You can also just add a file for the audio clip to play .wav file or something.
 # Unity Basics
 Create GameObjects in the scene and attach components (scripts) to them.
 
+At their most basic, GameObjects have a Transform which is their position, rotation, and scale.
+
 # Rendering
 Unity has multiple render pipelines, and I setup the project using URP (Universal Render Pipeline). 
 
